@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@400;700&family=Montserrat:wght@500;600&family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
+   
+  <script src="script.js"></script>
+  <title>Blood Donation System</title>
+</head>
+<body onload="shuffleTitle()">
+  <div class="navigation-bar">
+    <img src="logo.jpg" alt="logo" id="logo">
+    <div id="navigation-container">
+        
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="login.html">Log in</a></li>
+      </ul>
+    </div>
+      
+  </div>
+  
+  <!-- Slideshow code below -->
+    <div class="auto-slider">
+      <ul class="auto-slider__content">
+       <li><img src="slider1.jpg" alt="slider-1"></li>
+       <li><img src="slider2.jpg" alt="slider-2"></li>
+       <li><img src="slider3.jpg" alt="slider-3"></li>
+       <li><img src="slider4.jpg" alt="slider-4"></li>
+      </ul>
+     </div>
+  
+  <!-- End of Slideshow-->
+
+  <!-- Facts that changes every 3 seconds via setInterval()-->
+  <div id="facts">
+    <h3 class="emp">Did you know?</h1>
+    
+    <p id="didyouknow" style="text-align: center;"></p>
+  </div>
+
+  <div class="donatecontainer">
+    <p class="question">
+      Do you want to contribute? <br>
+      Are you a <b>donor</b> or <b>medical operator</b>?
+    </p>
+    
+    <!-- clickable area that opens a new window with desired size  -->
+      <a href="#" onClick="window.open('donorPerson.html','donorPerson','resizable,height=640px,width=640px'); return false;">
+        <div id="donor">
+        <!-- I am donor-->
+        <!-- Images are stock images. -->
+        <img style='height: 100%; width: 100%; object-fit: fill' src='donor.png'/> 
+        <div class="centered">I am Donor.</div>
+        </div>
+      </a>
+
+    <a href="#" onClick="window.open('medicalOperator.html','MedicalOperator','resizable,height=640px,width=640px'); return false;">
+      <div id="patient">
+      <!-- I am nurse-->
+      <!-- Images are stock images. -->
+      <img style='height: 100%; width: 100%; object-fit: fill' src='medicaloperator.png'/>
+      <div class="centered mo">I am Medical Operator.</div>
+      </div>
+    </div>
+    </a>
+  <!--footer for indicating website has license-->
+  <div class="footer">
+    <p>All Rights Reserved © 2023 </p>
+  </div>
+
+
+</body>
+</html>
